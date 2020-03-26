@@ -39,7 +39,7 @@ cmake_pop_check_state()
 
 add_library(cpptoml INTERFACE)
 
-target_include_directories(cpptoml INTERFACE
+target_include_directories(cpptoml SYSTEM INTERFACE
   $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 
